@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"name": "Cinematic",
+			"path": ".."
+		},
+		{
+			"name": "YasTween",
+			"path": "../../TweenPractice/YasTween"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "YasTween"
+	}
+}
