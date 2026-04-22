@@ -89,7 +89,7 @@ class Cinematic extends Phaser.Scene {
             targets: wispIntro,
             x: 400,
             y: -500,
-            ease: 'Linear',
+            ease: 'Quart.easeIn',
             duration: 2000,
             yoyo: false,
             repeat: 0,
@@ -171,19 +171,21 @@ class Cinematic extends Phaser.Scene {
             duration: 500,
             ease: 'Linear'
         });
+
+
         this.tweens.add({
-            delay: 7125,
+            delay: 7300,
             targets: wispAlone,
-            x: 500,
-            y: 400,
+            x: 465,
+            y: 555,
             ease: 'Linear',
-            duration: 50,
+            duration: 1,
 
         });
 
           this.tweens.add({
             delay: 8125,
-            targets: loadingText,
+            targets: [loadingText,wispAlone],
             alpha: 0,
             duration: 500,
             ease: 'Linear',
@@ -193,21 +195,21 @@ class Cinematic extends Phaser.Scene {
         });
 
         this.tweens.add({
-            delay: 8500,
+            delay: 9000,
             targets: [star1, star2, star3, star4, line1],
             alpha: 1,
             duration: 1000,
             ease: 'Linear'
         });
         this.tweens.add({
-            delay: 9500,
+            delay: 11000,
             targets: line2,
             alpha: 1,
             duration: 1000,
             ease: 'Linear'
         });
         this.tweens.add({
-            delay: 10500,
+            delay: 11000,
             x: 375,
             y: 375,
             targets: wispTitle,
@@ -215,7 +217,7 @@ class Cinematic extends Phaser.Scene {
             ease: 'Linear'
         });
          this.tweens.add({
-            delay: 10500,
+            delay: 13000,
             targets: wispTitle,
             alpha: 1,
             duration: 1000,
@@ -223,7 +225,7 @@ class Cinematic extends Phaser.Scene {
         });
 
         this.tweens.add({
-            delay: 14000,
+            delay: 16000,
             targets: [line1, line2, star1, star2, star3, star4, wispTitle],
             alpha: 0,
             duration: 1000,
