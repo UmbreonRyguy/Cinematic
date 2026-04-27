@@ -225,7 +225,7 @@ class Cinematic extends Phaser.Scene {
         });
 
         this.tweens.add({
-            delay: 16000,
+            delay: 19000,
             targets: [line1, line2, star1, star2, star3, star4, wispTitle],
             alpha: 0,
             duration: 1000,
